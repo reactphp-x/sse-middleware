@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sse Example</title>
+</head>
+
+<body>
+    <div id="example"></div>
+    <script>
+        var source = new EventSource('http://10.8.0.9:8090');
+        var div = document.getElementById('example');
+
+        source.onopen = function (event) {
+            div.innerHTML += '<p>Connection open ...</p>';
+        };
+
+        source.onerror = function (event) {
+            div.innerHTML += '<p>Connection close.</p>';
+        };
+
+        source.onmessage = function (event) {
+            div.innerHTML += ('<p>Ping: ' + event.data + '</p>');
+        };
+
+    </script>
+
+</body>
+
+</html>
