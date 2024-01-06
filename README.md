@@ -31,7 +31,7 @@ $http = new React\Http\HttpServer(function (ServerRequestInterface $request) {
     });
 
     Loop::addTimer(10, function () use ($stream) {
-        $stream->close();
+        $stream->end();
     });
 
     return (new SseMiddleware($stream, [
