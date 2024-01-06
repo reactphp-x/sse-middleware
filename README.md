@@ -41,3 +41,6 @@ $http = new React\Http\HttpServer(function (ServerRequestInterface $request) {
 $socket = new React\Socket\SocketServer('0.0.0.0:8090');
 $http->listen($socket);
 ```
+
+## License
+MIT
