@@ -15,7 +15,7 @@
 
 declare(strict_types=1);
 
-namespace Reactphp\Framework\SseMiddleware;
+namespace ReactphpX\SseMiddleware;
 
 use Stringable;
 
@@ -23,7 +23,7 @@ use function str_replace;
 
 /**
  * Class ServerSentEvents
- * @package Reactphp\Framework\SseMiddleware
+ * @package ReactphpX\SseMiddleware
  */
 class ServerSentEvents implements Stringable
 {

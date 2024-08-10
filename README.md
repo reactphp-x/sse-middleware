@@ -2,7 +2,7 @@
 
 ## install
 ```
-composer require reactphp-framework/sse-middleware -vvv
+composer require reactphp-x/sse-middleware -vvv
 ```
 
 ## Usage
@@ -11,8 +11,8 @@ composer require reactphp-framework/sse-middleware -vvv
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Reactphp\Framework\SseMiddleware\SseMiddleware;
-use Reactphp\Framework\SseMiddleware\ServerSentEvents;
+use ReactphpX\SseMiddleware\SseMiddleware;
+use ReactphpX\SseMiddleware\ServerSentEvents;
 use React\Stream\ThroughStream;
 use Psr\Http\Message\ServerRequestInterface;
 use React\EventLoop\Loop;

@@ -1,9 +1,9 @@
 {
-    "name": "reactphp-framework/sse-middleware",
+    "name": "reactphp-x/sse-middleware",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Reactphp\\Framework\\SseMiddleware\\": "src/"
+            "ReactphpX\\SseMiddleware\\": "src/"
         }
     },
     "authors": [

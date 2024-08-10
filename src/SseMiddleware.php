@@ -1,6 +1,6 @@
 <?php
 
-namespace Reactphp\Framework\SseMiddleware;
+namespace ReactphpX\SseMiddleware;
 
 use Psr\Http\Message\ServerRequestInterface;
 use React\Stream\ThroughStream;
